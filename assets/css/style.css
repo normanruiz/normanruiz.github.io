@@ -1,0 +1,14 @@
+
+.barranavegacion {
+  
+}
+
+.enlacenavegacion{
+  padding: 8px;
+  border: 4px;
+  background-color: aquamarine;
+}
+
+.barranavegacion .enlacenavegacion{
+
+}
