@@ -22,13 +22,13 @@
     <nav class="barranavegacion">
       <ul class="listanavegacion">
         <li class="itemlistanavegacion itemlistanavegacionprimero"><a class="enlacenavegacion" href="#inicio"><img src="assets/img/LogotipoNormanRuiz.png" alt="Logo" class="logo"></a></li>
-        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#personal">Acerca de mi</a></li>
-        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#aptitudes">Aptitudes</a></li>
-        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#educacion">Educacion</a></li>
-        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#trabajo">Trabajos</a></li>
-        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#proyectos">Proyectos</a></li>
-        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#blog">Blog</a></li>
-        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#contactarme">Contactarme</a></li>
+        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#personal"><span class="enlacenavegaciondecorasion">-</span>Acerca de mi</a></li>
+        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#aptitudes"><span class="enlacenavegaciondecorasion">-</span>Aptitudes</a></li>
+        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#educacion"><span class="enlacenavegaciondecorasion">-</span>Educacion</a></li>
+        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#trabajo"><span class="enlacenavegaciondecorasion">-</span>Trabajos</a></li>
+        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#proyectos"><span class="enlacenavegaciondecorasion">-</span>Proyectos</a></li>
+        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#blog"><span class="enlacenavegaciondecorasion">-</span>Blog</a></li>
+        <li class="itemlistanavegacion"><a class="enlacenavegacion" href="#contactarme"><span class="enlacenavegaciondecorasion">-</span>Contactarme</a></li>
       </ul>
       <section class="sectionredessociales">
         <a href="https://github.com/normanruiz" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -37,14 +37,14 @@
       </section>
     </nav>
 
-  <section id="inicio" class="seccioninicio">
+  <section id="inicio" class="seccion seccioninicio">
     <p>Hola!!! Soy</p>
     <h1>Norman Ruiz</h1>
     <h2>Desarrollador Full stack</h2>
   </section>
 
-  <section id="personal">
-    <h2>Acerca de mi</h2>
+  <section id="personal" class="seccion seccionacercademi">
+    <h2 class="subtitulo">Acerca de mi</h2>
     <p>Una breve presentacion</p>
     <ul>
       <li>
@@ -72,8 +72,8 @@
   </section>
 
 
-  <section id="aptitudes">
-    <h2>Aptitudes</h2>
+  <section id="aptitudes" class="seccion seccionaptitudes">
+    <h2 class="subtitulo">Aptitudes</h2>
     <article>
       <h3>HTML</h3>
       <p>HTML, siglas en inglés de HyperText Markup Language, hace referencia al lenguaje de marcado para la elaboración de páginas web</p>
@@ -105,8 +105,8 @@
     </article>
   </section>
 
-<section>
-  <h2>Educacion</h2>
+<section id="educacion" class="seccion seccioneducacion">
+  <h2 class="subtitulo">Educacion</h2>
   <p>Un parrafo con algo interesante, como cuales son mis metas/objetivos a nivel academico</p>
   <article>
     <h3>Universidad tecnologica nacional</h3>
@@ -123,8 +123,8 @@
   <p>una cita de algun groso de la computacion!!!</p>
 </section>
 
-<section>
-  <h2>Trabajo</h2>
+<section id="trabajo" class="seccion secciontrabajo">
+  <h2 class="subtitulo">Trabajo</h2>
   <article>
     <h3>Prisma Medios de Pagos</h3>
     <h4>Analista de Tecnologias Payway</h4>
@@ -145,8 +145,8 @@
   </article>
 </section>
 
-<section>
-  <h2>Mis proyectos</h2>
+<section id="proyectos" class="seccion seccionproyectos">
+  <h2 class="subtitulo">Mis proyectos</h2>
   <ul>
     <li><a href="#"> Mi Sitio Oficial</a></li>
     <li><a href="#"> Bot Repros - Automatizacion Prisma </a></li>
@@ -161,30 +161,49 @@
   </article>
 </section>
 
-<section>
-  <h2>Mi Blog</h2>
+<section id="blog" class="seccion seccionblog">
+  <h2 class="subtitulo">Mi Blog</h2>
   <p>En este momento esta seccion se encuentra en construccion... no seas impaciente !!! </p>
 </section>
 
-<section>
-  <h2>Contactarme</h2>
-  <form class="" action="index.html" method="post">
-    <input type="text" name="" value="">
-    <input type="text" name="" value="">
-    <input type="select" name="" value="">
-    <textarea name="name" rows="8" cols="80"></textarea>
-    <button type="button" name="button"></button>
+<section id="contactarme" class="seccion seccioncontactarme">
+  <h2 class="subtitulo"><span class="subtitulodecorasion">-</span>Contactarme</h2>
+  <div>
+  <article class="contactarmecanales canal1">
+    <i class="fa-brands fa-discord"></i>
+    <p> Charla por Discord <br/> Norman#3827 </p>
+  </article>
+  <article class="contactarmecanales canal2">
+    <i class="fa-solid fa-envelope"></i>
+    <p> Consultas generales <br/> norman.ruiz@outlook.com.ar </p>
+  </article>
+  <form class="formulariocontacto" action="index.html" method="post">
+    <input type="text" id="inputnombre" placeholder="Su nombre..." class="inputs">
+    <input type="text" id="inputapellido" placeholder="Su apellido..." class="inputs">
+    <select id="inputtematica" class="inputs">
+      <option value="" disabled selected>En que estas interesado?</option>
+      <option value="Base de datos">Base de datos</option>
+      <option value="Desarrollo Back End">Desarrollo Back End</option>
+      <option value="Desarrollo Font End">Desarrollo Font End</option>
+      <option value="Desarrollo Full Stack">Desarrollo Full Stack</option>
+      <option value="Aplicaciones de escritorio">Aplicaciones de escritorio</option>
+      <option value="Aplicaciones de consola">Aplicaciones de consola</option>
+      <option value="Automatizaciones">Automatizaciones</option>
+    </select>
+    <textarea name="name" rows="6" cols="100" class="inputs" placeholder="Escribe tu consulta..."></textarea>
+    <button type="submit" id="botoncontactar" class="botonenviar">Enviar</button>
   </form>
+</div>
 </section>
 
   <footer>
     <section>
-      <a rel="stylesheet" href="https://www.linkedin.com/in/norman-ruiz/">linkedin</a>
-      <a rel="stylesheet" href="https://github.com/normanruiz">Github</a>
-      <a rel="stylesheet" href="https://bitbucket.org/no_ruiz/">Bitbucket</a>
+      <a href="https://github.com/normanruiz" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/norman-ruiz/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://bitbucket.org/no_ruiz/workspace/projects/" target="_blank"><i class="fa-brands fa-bitbucket"></i></a>
     </section>
     <section>
-      <img src="" alt="logo">
+      <img src="assets/img/LogotipoNormanRuiz.png" alt="Logo" class="logo">
     </section>
     <p>Copyrigth</p>
   </footer>

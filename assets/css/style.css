@@ -1,6 +1,11 @@
+/* Configuraciones generales */
 body {
-  padding-left: 300px;
+  margin: 0;
+  padding-left: 241px;
 }
+
+/* Configuraciones barra de navegacion */
+
 .barranavegacion {
   border-right: 1px solid rgba(52, 73, 94, 0.2);
   width: 240px;
@@ -47,7 +52,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: brown;
+  background-color: darkslategray;
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.6s ease-out;
@@ -58,22 +63,127 @@ body {
   transform-origin: bottom left;
 }
 
+.enlacenavegaciondecorasion {
+  color: blue;
+  font-family: 'Abel', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 2px;
+  padding-right: 8px;
+}
 
+.sectionredessociales i {
+  margin: 10px;
+  color: darkslategray;
+}
 
+/* Configuraciones generales de secciones */
+
+.seccion {
+  border-bottom: 1px solid rgba(52, 73, 94, 0.2);
+  padding: 20px;
+}
+
+.subtitulo {
+  padding: 8px 20px;
+  margin: 100px 190px;
+  font-family: 'Abel', sans-serif;
+  font-weight: medium;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.subtitulodecorasion {
+  color: blue;
+  font-size: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Configuraciones seccion inicio */
 
 .seccioninicio {
   height: 100%;
 }
 
+/* Configuraciones seccion acerca de mi */
+
 .sectionredessociales {
-text-align: center;
+  text-align: center;
 }
 
-.sectionredessociales i {
-  margin: 10px;
-}
+/* Configuraciones seccion contactarme */
 
 .logo {
   width: 75px;
   height: 75px;
+}
+
+.formulariocontacto {
+  margin-left: 250px;
+  width: 500px;
+}
+
+.inputs {
+  box-sizing: border-box;
+  padding: 10px 24px;
+  margin: 8px 0px;
+  width: 100%;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid rgba(52, 73, 94, 0.2);
+  color: darkslategray;
+  background-color: white;
+}
+
+.botonenviar {
+  padding: 16px 34px;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.botonenviar:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+}
+
+.contactarmecanales {
+  margin-bottom: 20px;
+  float: left;
+}
+
+.canal1{
+  width: 260px;
+  margin-left: 250px;
+}
+
+.canal2{
+  width: 300px;
+  margin-left: 0px;
+}
+
+.contactarmecanales i {
+  color: darkslategray;
+  position: relative;
+  float: left;
+  margin: 10px 10px 20px 10px;
+}
+
+.contactarmecanales p {
+  margin: 4px 8px;
+  margin: 4px 8px;
+  color: darkslategray;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  font-size: 16px;
 }
