@@ -1,10 +1,14 @@
-/* Configuraciones generales */
+/* ======================================================================================
+    Configuraciones generales
+   ====================================================================================== */
 body {
   margin: 0;
   padding-left: 241px;
 }
 
-/* Configuraciones barra de navegacion */
+/* ======================================================================================
+    Configuraciones barra de navegacion
+   ====================================================================================== */
 
 .barranavegacion {
   border-right: 1px solid rgba(52, 73, 94, 0.2);
@@ -77,7 +81,9 @@ body {
   color: darkslategray;
 }
 
-/* Configuraciones generales de secciones */
+/* ======================================================================================
+    Configuraciones generales de secciones
+   ====================================================================================== */
 
 .seccion {
   border-bottom: 1px solid rgba(52, 73, 94, 0.2);
@@ -101,19 +107,25 @@ body {
   padding-right: 10px;
 }
 
-/* Configuraciones seccion inicio */
+/* ======================================================================================
+    Configuraciones seccion inicio
+   ====================================================================================== */
 
 .seccioninicio {
   height: 100%;
 }
 
-/* Configuraciones seccion acerca de mi */
+/* ======================================================================================
+    Configuraciones seccion acerca de mi 
+   ====================================================================================== */
 
 .sectionredessociales {
   text-align: center;
 }
 
-/* Configuraciones seccion contactarme */
+/* ======================================================================================
+    Configuraciones seccion contactarme 
+   ====================================================================================== */
 
 .logo {
   width: 75px;
@@ -122,7 +134,7 @@ body {
 
 .formulariocontacto {
   margin-left: 250px;
-  width: 500px;
+  width: 560px;
 }
 
 .inputs {
@@ -181,9 +193,53 @@ body {
 
 .contactarmecanales p {
   margin: 4px 8px;
-  margin: 4px 8px;
   color: darkslategray;
   font-family: 'Source Code Pro', monospace;
   font-weight: bold;
   font-size: 16px;
+}
+
+/* ======================================================================================
+    Configuraciones seccion footer
+   ====================================================================================== */
+
+footer {
+  background-color: rgb(247, 247, 247);
+  padding: 10px 40px;
+  vertical-align: bottom;
+}
+
+.sectionredessocialesfooter {
+  box-sizing: content-box;
+  float: left;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  height: 75px;
+  width: 40%;
+}
+
+.sectionredessocialesfooter i {
+  color: darkslategray;
+  margin: 14px 10px;
+  padding: 10px 10px;
+}
+
+.sectionlogofooter {
+  display: inline-block;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  width: 40%;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+.sectioncopyrigthfooter {
+  text-align: center;
+  margin: 4px 8px;
+  padding: 4px 8px;
+  color: darkslategray;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  font-size: 16px;
+  height: 25px;
 }
